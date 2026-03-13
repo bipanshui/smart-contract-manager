@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SCM | Smart Contract Manager</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:monospace;
+}
+
+body{
+background:#000;
+color:#00ff9c;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#050505;
+border-bottom:1px solid #00ff9c33;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#00ff9c;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#00ffaa;
+text-shadow:0 0 10px #00ff9c;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+text-shadow:0 0 20px #00ff9c;
+}
+
+.hero p{
+max-width:650px;
+font-size:18px;
+opacity:0.8;
+margin-bottom:30px;
+}
+
+.btn{
+padding:14px 35px;
+border:1px solid #00ff9c;
+background:transparent;
+color:#00ff9c;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+background:#00ff9c;
+color:black;
+box-shadow:0 0 20px #00ff9c;
+}
+
+/* FEATURES */
+
+.features{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+padding:80px 40px;
+}
+
+.card{
+width:260px;
+padding:30px;
+border:1px solid #00ff9c33;
+background:#050505;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00ff9c33;
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.card p{
+font-size:14px;
+opacity:0.8;
+}
+
+/* TERMINAL */
+
+.terminal{
+margin:80px auto;
+width:80%;
+max-width:900px;
+background:black;
+border:1px solid #00ff9c33;
+padding:25px;
+}
+
+.terminal p{
+margin:6px 0;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+border-top:1px solid #00ff9c33;
+margin-top:60px;
+font-size:14px;
+opacity:0.6;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+.hero h1{
+font-size:36px;
+}
+
+nav{
+padding:20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">SCM</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Dashboard</a></li>
+<li><a href="#">Contracts</a></li>
+<li><a href="#">Login</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Smart Contract Manager</h1>
+
+<p>
+Secure. Track. Manage your blockchain smart contracts with developer-grade infrastructure.
+</p>
+
+<button class="btn">Launch Dashboard</button>
+
+</section>
+
+<section class="features">
+
+<div class="card">
+<h3>Contract Security</h3>
+<p>Store and analyze smart contracts securely with enterprise level encryption.</p>
+</div>
+
+<div class="card">
+<h3>Analytics</h3>
+<p>Track contract performance, usage metrics, and blockchain activity.</p>
+</div>
+
+<div class="card">
+<h3>Developer Tools</h3>
+<p>APIs and integrations designed for engineers and blockchain developers.</p>
+</div>
+
+</section>
+
+<div class="terminal">
+
+<p>> connecting to blockchain network...</p>
+<p>> loading smart contract modules...</p>
+<p>> verifying cryptographic signatures...</p>
+<p>> system ready.</p>
+
+</div>
+
+<footer>
+
+<p>© 2026 Smart Contract Manager | Built by Bipanshu</p>
+
+</footer>
+
+</body>
+</html>
