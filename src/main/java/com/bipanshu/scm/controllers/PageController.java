@@ -6,6 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class PageController {
      
+     @GetMapping("/")
+     public String defaultHome(){
+         return "home";
+     }
+
      @GetMapping("/home")
      public String home(){
         System.out.println("Home page handler");
