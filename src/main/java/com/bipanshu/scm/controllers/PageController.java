@@ -16,4 +16,21 @@ public class PageController {
         System.out.println("Home page handler");
         return "home";
      }
+
+     @GetMapping("/about")
+     public String about(){
+        return "about";
+     }
+
+     @GetMapping("/services")
+     public String services(){
+        return "services";
+     }
+
+     @GetMapping("/dashboard")
+     public String dashboard(){
+        return "dashboard";
+     }
+
+     
 }
